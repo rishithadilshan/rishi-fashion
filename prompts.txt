@@ -1,0 +1,24 @@
+AI Usage Log — Rishi Fashion SPA
+================================
+NOTE: This is a starter log reflecting how this reference implementation was
+scaffolded with AI assistance. Replace/extend these entries with your own
+actual prompts and iterations before submitting, per the assignment's GenAI
+policy (you must be able to explain every part of the code).
+
+The aim 01: Scaffold a typed API layer for DummyJSON products with no "any" types
+Actual prompt: Generate TypeScript interfaces for the DummyJSON /products response, covering nested fields like dimensions, reviews, and meta, then wrap axios calls for getAll, getByCategory, search, and getById in a ProductService object.
+
+The aim 02: Build a Pinia cart store that survives page reloads
+Actual prompt: Write a Pinia store for a shopping cart that stores CartLine[] (product + quantity), persists to localStorage on every mutation, restores state on load, and exposes getters for itemCount, subtotal, and total including a flat shipping charge.
+
+The aim 03: Simulate authentication against DummyJSON's /auth/login endpoint
+Actual prompt: Create a Pinia auth store that posts credentials to https://dummyjson.com/auth/login, stores the returned accessToken and a trimmed AuthUser object in localStorage, exposes isLoggedIn, and handles invalid-credential errors gracefully.
+
+The aim 04: Recreate the Figma "Order Place" and "Payment Details" screens as Vue components
+Actual prompt: Turn this checkout mockup (delivery form, quantity, price breakdown with shipping, payment method radio buttons, Pay Now button) into a Vue 3 <script setup> component with a reactive form object and Tailwind styling matching a teal/cream palette.
+
+The aim 05: Debug a Tailwind dark-mode toggle not applying to nested components
+Actual prompt: My dark: classes aren't updating when I toggle a class on document.documentElement — my tailwind.config.js content globs and darkMode setting, what's wrong?
+
+The aim 06: Generate responsive grid classes for the product listing
+Actual prompt: Give me Tailwind classes for a product grid that shows 2 columns on mobile, 3 on tablet, and 4 on desktop, with cards that keep a consistent 3:4 image aspect ratio.
