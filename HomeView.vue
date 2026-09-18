@@ -6,7 +6,7 @@ import { useCartStore } from '@/stores/cart'
 import type { Product, CategoryOption } from '@/types/product'
 import FilterBar from '@/components/FilterBar.vue'
 import ProductGrid from '@/components/ProductGrid.vue'
-import batikHero from '@/assets/113.jpg'
+import batikHero from '@/assets/115images.jpg'
 
 const route = useRoute()
 const cart = useCartStore()
